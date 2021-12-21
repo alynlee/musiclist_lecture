@@ -14,6 +14,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //1. navigation 만들기
+        //2. fragment 만들기
+        //3. ≠+
 
     }
 }
