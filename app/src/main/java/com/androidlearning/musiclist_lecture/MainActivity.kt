@@ -14,29 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val items = mutableListOf<String>()
-
-        items.add("a")
-        items.add("b")
-        items.add("c")
-
-        val rv = findViewById<RecyclerView>(R.id.rv)
-
-        val rvAdapter = RVAdapter(items)
-
-        rv.adapter = rvAdapter
-        rv.layoutManager = LinearLayoutManager(this)
-
-        rvAdapter.itemClick = object : RVAdapter.ItemClick {
-            override fun onClick(view: View, position: Int) {
-                Toast.makeText(baseContext, items[position], Toast.LENGTH_LONG).show()
-
-            }
-
-        }
-
-
-
 
     }
 }
